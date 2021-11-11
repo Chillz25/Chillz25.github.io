@@ -3,243 +3,276 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/jtc-favicon.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- fontawesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- styles:custom -->
+    <link rel="stylesheet" href="css/main.css">
+
     <title>Jofher Cruz: Web Developer</title>
   </head>
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="95">
+  <body data-spy="scroll" data-target=".navbar" data-offset="95">
 
-    <!-- navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-color fixed-top">
-    <div class="container">
-      <div class="logo-div">
-          <a class="logo d-none d-md-block" href="#home"><img src="img/jtc_logo.png" height="70px"></a>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#about">About</a>
-          <a class="nav-item nav-link" href="#projects">Projects</a>
-          <a class="nav-item nav-link" href="#contact">Contact</a>
-        </div>
+
+    <!-- Overlay Navigation -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#hireme">Hire me</a></li>
       </div>
     </div>
-  </nav><!-- /navbar -->
 
-    <!-- jumbotron -->
-    <div class="jumbotron text-white">
-      <div class="container pt-5">
-        <div class="row">
-          <div class="d-none d-md-block">
-            <img src="img/code.svg" alt="code logo" class="code">
-          </div>
-          <div class="col">
-            <h1 class="display-4">Jofher Cruz</h1>
-            <p class="lead">artist, web developer, and all around maker of things</p>
-          <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-            <a class="btn btn-primary btn-lg" href="#contact">Contact Now</button>
-            <a class="btn btn-light btn-lg" href="#projects">See Projects</a>
-          </div>
-        </div>
+    <!-- Navigation -->
+    <div class="nav-container">
+      <header>
+        <a href="index.html" class="logo"><img src="img/Logo.svg" alt="JTC Logo"></a>
+        <nav>
+          <ul>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#hireme">Hire me</a></li>
+          </ul>
+        </nav>
+      <img src="img/burger.svg" class="burger" alt="burger" onclick="openNav()">
+      </header>
+      <div class="social-header">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/jofher-cruz-408354140/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a></li>
+          <li><a href="https://github.com/Chillz25" target="_blank"><img src="img/github.png" alt="github"></a></li>
+        </ul>
       </div>
     </div>
-  </div><!-- /jumbotron -->
+
+    <!-- Hero Design -->
+    <div class="hero">
+      <div class="content">
+        <h1 class="stagger1">Beautifully Crafted Web Experiences</h1>
+        <div class="meet stagger1">
+          <img src="img/point_down.png" alt="pointing_down">
+          <p>Meet Jofher Cruz</p>
+        </div>
+
+        <svg class="scroll stagger1" width="33" height="63" viewBox="0 0 33 63" fill="none">
+          <rect x="2" y="2" width="29" height="59" rx="14.5" stroke="white" stroke-width="4"/>
+          <ellipse class="circle" cx="16.5" cy="19.7046" rx="9.36487" ry="10.0227" fill="white"/>
+        </svg>
+      </div>
+
+      <svg class="hero-design" width="400" height="400" viewBox="0 0 400 400" fill="none">
+        <rect class="square-anim" x="200" width="100" height="100" rx="10" fill="#150C2B" fill-opacity="0.9"/>
+        <rect class="square-anim" x="300" y="100" width="100" height="100" rx="10" fill="#7643EA" fill-opacity="0.9"/>
+        <rect class="square-anim" x="100" y="100" width="100" height="100" rx="10" fill="white" fill-opacity="0.9"/>
+        <rect class="square-anim" x="200" y="200" width="100" height="100" rx="10" fill="#150C2B" fill-opacity="0.9"/>
+        <rect class="square-anim" y="200" width="100" height="100" rx="10" fill="#7643EA" fill-opacity="0.9"/>
+        <rect class="square-anim" x="100" y="300" width="100" height="100" rx="10" fill="white" fill-opacity="0.9"/>
+        <circle class="square-anim" cx="150" cy="250" r="50" fill="#32FFA8" fill-opacity="0.9"/>
+        <circle class="square-anim" cx="250" cy="150" r="50" fill="#D43D72" fill-opacity="0.9"/>
+      </svg>
+    </div>
 
 
-<div class="container pt-4">
-    <!-- about -->
-      <div id="about" class="row">
-        <div class="col-lg-6 order-lg-2">
-          <h3 class="mb-4">About</h3>
-          <p>I’m an aspiring web developer who loves everything about the web.
-            I’m excited to bring my life experience to the process of building fantastic looking websites.</p>
-          <p>Highly regarded for willingness to learn new skills, use creative approaches to solve problems,
-            and patience/persistence when faced with challenges.</p>
-        </div>
-        <div class="col-lg order-lg-1 text-center">
-  	      <i class="fas fa-user-secret anonymous text-primary mb-4"></i>
-        </div>
-        <div class="col-lg order-3">
-          <h3 class="mb-4">Skills</h3>
-					<div class="list-group">
-					  <p class="list-group-item bg-info"><strong class="text-light">HTML</strong></p>
-					  <p class="list-group-item bg-danger"><strong class="text-light">CSS</strong></p>
-            <p class="list-group-item bg-info"><strong class="text-light">JavaScript</strong></p>
-					  <p class="list-group-item bg-danger"><strong class="text-light">JQuery</strong></p>
-					  <p class="list-group-item bg-info"><strong class="text-light">Git</strong></p>
-					  <p class="list-group-item bg-danger"><strong class="text-light">Bootstrap</strong></p>
-            <p class="list-group-item bg-info"><strong class="text-light">PHP</strong></p>
-					</div>
-        </div>
-      </div><!-- /about -->
+    <!-- Featured Project -->
+    <section class="featured">
+      <div class="left">
+        <div class="inner transition2">
+          <p class="subtitle">Featured Project</p>
+          <a href="#" class="featured-title">Mywhitecard.ph</a>
 
-      <!-- projects -->
-      <h1 id="projects" class="display-4 text-center my-5 text-muted">Projects</h1>
-			<div class="row">
-				<div class="col-md-6">
-          <div class="card mb-3">
-            <img class="card-img-top" src="img/portfolio-mockup.jpg" alt="Responsive Portfolio Mockup">
-            <div class="card-body">
-              <h4 class="card-title">Responsive Web Design</h4>
-              <p class="card-text">
-                This project is designed that look and function well on multiple screen sizes.
-                Using HTML, CSS, and responsive design, a mobile-first web page with a layout that adjusts to fit
-                mobile phones, tablets, and desktop displays.
-              </p>
-              <a href="https://chillz25.github.io/responsive-portfolio/" target="_blank" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">VISIT NOW</a>
+          <p class="featured-desc">My White Card is an innovative collaboration of the recent revolutionary 
+            healthcare approach; The first of its kind beauty, health, and wellness membership that offers 
+            an array of the best discount coupons and unlimited services in pursuit of a convenient 
+            access through a Mobile and Website.</p>
+          
+            <span class="badge">WEBSITE DEVELOPMENT</span>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JAVASCRIPT</span>
+            <span class="badge">JQUERY</span>
+            <span class="badge">BOOTSTRAP</span>
+            <span class="badge">CORE PHP</span>
+            <span class="badge">MOBILE DEVELOPMENT</span>
+            <span class="badge">IONIC FRAMEWORK</span>
+          
+          
+        
+        </div>
+      </div>
+      <a href="https://www.mywhitecard.ph/" target="_blank" class="right zoom">
+        <img src="img/mywhitecard.png" class="right transition2" alt="My White Card">
+      </a>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills"> 
+      <div class="skills-container">
+        <ul>
+          <li class="transition2">
+            <div class="icon-container one">
+              <img src="img/mobile_dev.svg" class="mobile-dev" alt="Mobile Development">
             </div>
-          </div>
-				</div>
+            <p class="skill-title">Mobile Development</p>
+            <p class="featured-desc skill-desc">Let's turn your ideas into mobile app that can easily access in Google Play and App Store.</p>
 
-				<div class="col-md-6">
-          <div class="card mb-3">
-            <img class="card-img-top" src="img/form-mockup.jpg" alt="Form Mockup">
-            <div class="card-body">
-              <h4 class="card-title">News Letter Signup Form</h4>
-              <p class="card-text">
-                Web forms appear everywhere online: forms allow users to order books, sign up for websites, and post to Facebook.
-                This project is responsive, mobile-first registration form using a variety of HTML form elements.
-              </p>
-              <a href="https://chillz25.github.io/forms/" target="_blank" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">VISIT NOW</a>
+            <span class="badge black">IONIC FRAMEWORK</span>
+            <span class="badge black">ANDROID</span>
+            <span class="badge black">IOS</span>
+            <span class="badge black">ANGULAR</span>
+          </li>
+          <li class="transition2">
+            <div class="icon-container two">
+              <img src="img/frontend_dev.svg" class="frontend-dev" alt="Frontend Development">
             </div>
+            <p class="skill-title">Website Development</p>
+            <p class="featured-desc skill-desc">Responsive websites built for an optimal user experience that achieves your business goals.</p>
+
+              <span class="badge black">HTML</span>
+              <span class="badge black">CSS</span>
+              <span class="badge black">BOOTSTRAP</span>
+              <span class="badge black">JAVASCRIPT</span>
+              <span class="badge black">JQUERY</span>
+              <span class="badge black">CORE PHP</span>
+              
+          </li>
+          <li class="transition2">
+            <div class="icon-container three">
+              <img src="img/backend_dev.svg" class="backend-dev" alt="Backend Development">
+            </div>
+            <p class="skill-title">Content Management System (CMS)</p>
+            <p class="featured-desc skill-desc">Manage your website using the web's most popular content management system.</p>
+
+              <span class="badge black">WORDPRESS</span>
+              <span class="badge black">SHOPIFY</span>
+            
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="work" class="portfolio">
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Real Estate Website</p>
+
+            <p class="featured-title">Infinitygroup.ph</p>
+            <p class="featured-desc">Infinity Group is a Real Estate and 
+              Property Management firm providing solutions and expertise on Philippine properties, 
+              investment, real estate development, sales and marketing, leasing and property management.</p>
+            
+              <span class="badge">WORDPRESS DEVELOPMENT</span>
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">ELEMENTOR</span>
+              <span class="badge">THEME</span>
+
+
           </div>
-				</div>
 
-				<div class="col-md-6">
-			    <div class="card mb-3">
-			      <img class="card-img-top" src="img/interactive-gallery-mockup.jpg" alt="interactive Gallery Mockup">
-			      <div class="card-body">
-              <h4 class="card-title">Interactive Photo Gallery</h4>
-			          <p class="card-text">
-                  Interactive image galleries are a common feature of many websites, from photo sites to e-commerce applications.
-                  This project was created using HTML, CSS, JQuery Plugins and the popular programming language JavaScript to create
-                  an interactive, searchable gallery of photos.
-              </p>
-            <a href="https://chillz25.github.io/interactivity-gallery/" target="_blank" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">VISIT NOW</a>
-			      </div>
-			    </div>
-				</div>
+        </div>
+        <a href="https://infinitygroup.ph/" target="_blank" class="website">
+          <img src="img/infinitygroup_website.png" class="zoom" alt="Infinity Group">
+        </a>
+      </div>
 
-				<div class="col-md-6">
-				  <div class="card mb-3">
-			      <img class="card-img-top" src="img/wheel-of-success-mockup.jpg" alt="Wheel of Success Mockup">
-			      <div class="card-body">
-              <h4 class="card-title">Wheel of Success</h4>
-			        <p class="card-text">
-                A browser version of “Wheel of Success”, a word guessing game.
-                Using Javascript to come up with a random phrase that players will try to guess by entering different
-                letters into the program.
-              </p>
-              <a href="https://chillz25.github.io/wheel-of-success/" target="_blank" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">VISIT NOW</a>
-			      </div>
-			    </div>
-				</div>
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Ecommerce Website</p>
+  
+            <p class="featured-title">Mywhitecart.com</p>
+            <p class="featured-desc">My White Cart is a Ecommerce website featuring premier Beauty, Health, and Wellness products 
+              from our local and international partners, putting emphasis on convenience and 
+              reliability by delivering high quality products to your door step.</p>
 
-				<div class="col-md-6">
-			    <div class="card mb-3">
-			      <img class="card-img-top" src="img/agency-mockup.jpg" alt="Agency Mockup">
-			      <div class="card-body">
-              <h4 class="card-title">Agency template</h4>
-			        <p class="card-text">
-                This project, is an agency sample website where used different kinds of jQuery Plugins.
-              </p>
-              <a href="https://chillz25.github.io/agency/" target="_blank" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">VISIT NOW</a>
-			      </div>
-			    </div>
-				</div>
+            <span class="badge">SHOPIFY DEVELOPMENT</span>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JAVASCRIPT</span>
+            <span class="badge">ADD PLUGINS</span>
+            <span class="badge">THEME</span>
+            <span class="badge">WEBHOOKS</span>
+            <span class="badge">CUSTOM EMAIL</span>
+            <span class="badge">PHP</span>
 
-				<div class="col-md-6">
-			    <div class="card">
-			      <img class="card-img-top" src="img/rcc-mockup.jpg" alt="RCC Mockup">
-			      <div class="card-body">
-              <h4 class="card-title">Rainbow Cement Corp.</h4>
-			        <p class="card-text">
-                Rainbow Cement Corp. is a corporate website.
-                Created using Bootstrap, JavaScript, and JQuery Plugins.
-              </p>
-              <a href="https://chillz25.github.io/rcc/" target="_blank" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">VISIT NOW</a>
-			      </div>
-			    </div>
-				</div>
-			</div><!-- /projects -->
+          </div>
+        </div>
+        <a href="https://mywhitecart.com/" target="_blank"><img src="img/mywhitecart_website.png" class="zoom" alt="My White Cart"></a>
+      </div>
 
-      <!--Contact-->
-      <h1 id="contact" class="display-4 text-center my-5 text-muted">Contact</h1>
-      <div class="row test">
-        <div class="col-md-4">
-          <p class="mb-3">Let's work together! You can send me a message about your project or connect with me using the options
-            below.</p>
-          <p><i class="fas fa-map-marker-alt"></i> Philippines, Dasmariñas Cavite</p>
-          <p><i class="fas fa-mobile-alt"></i> (+63) 927-926-7800</p>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:jofhercruz@yahoo.com">jofhercruz@yahoo.com</a></p>
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link social linkedin" href="https://www.linkedin.com/in/jofher-cruz-408354140/" target="_blank">
-              </a>
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Corporate Website</p>
+    
+            <p class="featured-title">Rainbow Cement Corp.</p>
+            <p class="featured-desc"> Rainbow Cement Corp. is a corporate website.</p>
+
+              <span class="badge">WEBSITE DEVELOPMENT</span>
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JAVASCRIPT</span>
+              <span class="badge">BOOTSTRAP</span>
+              <span class="badge">JQUERY PLUGINS</span>
+
+          </div>
+        </div>
+        <a href="https://chillz25.github.io/rcc/" target="_blank"><img src="img/rcc_website.png" class="zoom" alt="Rainbow Cement Corp."></a>
+      </div>
+    </section>
+
+
+    <!-- Hire Me -->
+    <section id="hireme" class="hire-me transition3">
+      <p class="title">Like what you see? <span class="hire">Hire me</span></p>
+
+      <div class="hire-me-container">
+        <div class="left">
+          <p>Let's work together! You can send me a message about your 
+            project or connect with me using the options below.</p>
+          
+          <ul class="contact-details">
+            <li>
+              <img src="img/location.png" class="contact-icon" alt="location">
+              <p>Philippines, Dasmariñas Cavite</p>
             </li>
-            <li class="nav-item">
-              <a class="nav-link social github" href="https://github.com/Chillz25" target="_blank">
-              </a>
+            <li>
+              <img src="img/mobile.png" class="contact-icon" alt="mobile">
+              <p>(+63) 927-926-7800</p>
+            </li>
+            <li>
+              <img src="img/email.png" class="contact-email" alt="email">
+              <p>jofhercruz@yahoo.com</p>
             </li>
           </ul>
+  
+          <ul class="contact-social">
+            <li><a href="https://github.com/Chillz25" target="_blank"><img src="img/github.png" alt="github"></a></li>
+            <li><a href="https://www.linkedin.com/in/jofher-cruz-408354140/" target="_blank"><img src="img/linkedin.png" alt="github"></a></li>
+          </ul>
         </div>
-
-        <!-- Contact Form-->
-        <div class="col-md-8">
-          <form>
-          <div class="row">
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="firstname" name="firstname" placeholder="First Name" type="text" required>
-              </div>
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="lastname" name="lastname" placeholder="Last Name" type="text" required>
-              </div>
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="cpNum" name="cpNum" placeholder="Cellphone Number" type="text" required>
-              </div>
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-              </div>
-          </div>
-          <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
-          <div class="row">
-            <div class="col-md-12 form-group">
-              <button class="btn btn-md btn-outline-primary mt-3" id="submit" name="submit" type="submit">Send</button>
-              <span id="error_message" class="text-danger ml-2"></span>
-              <span id="success_message" class="text-success ml-2"></span>
-          </form>
-            </div>
-          </div>
+  
+        <div class="right">
+            <input type="text" class="input-text" placeholder="Full name">
+            <input type="text" class="input-number" placeholder="Cellphone Number">
+            <input type="email" class="input-email" placeholder="Email">
+            <textarea class="input-message" rows="4" cols="10" placeholder="Message"></textarea>
+            <button type="submit" class="submit" disabled> Submit </button>
+          
         </div>
-      </div> <!-- /contact -->
+      </div>
+      
+    </section>
+    <footer class="transition2">
+      © 2021 Jofher Cruz: Web Developer
+    </footer>
 
 
-      <hr>
-
-      <!-- footer -->
- 			<div class="row py-3">
-				<div class="col-md text-md-right">
-					<small>&copy; 2018 Jofher Cruz: Web Developer</small>
-				</div>
-			</div><!-- /footer -->
-
-
-</div> <!-- /.container -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Smooth Scroll -->
     <script src="js/smooth-scroll.js"></script>
